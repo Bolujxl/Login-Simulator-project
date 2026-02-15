@@ -56,14 +56,16 @@ body {
     flex-direction: column;
     /* Mobile Default */
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-top: var(--space-lg);
     gap: var(--space-md);
+    overflow-y: scroll;
 }
 
 /* Images Section */
 .left-section {
     width: 100%;
-    height: 40vh;
+    height: 20vh;
     /* Mobile height */
     border-radius: 12px;
     overflow: hidden;
@@ -74,7 +76,7 @@ body {
 }
 
 .left-section img {
-    width: 70%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
@@ -382,6 +384,7 @@ body {
         flex-direction: row;
         height: 100vh;
         overflow: hidden;
+        padding-top: 0;
     }
 
     .left-section {

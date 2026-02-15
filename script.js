@@ -203,3 +203,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+// okay, i want to nullify the array part and just allow any user get the welcome modal.. anything being removed should be turned to commenst not deleted
