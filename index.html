@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=lock" />
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Login Simulator</title>
+</head>
+
+<body>
+
+    <section class="main-container">
+        <div class="left-section">
+
+            <img src="imgs/willian-justen-de-vasconcellos-VoAPtbH7xyI-unsplash.jpg" alt="court image">
+
+        </div>
+
+        <div class="form">
+
+            <div class="inner-form">
+
+                <div class="headtext">
+                    <h1>Welcome back.</h1>
+                    <p>Enter your details to continue using our services.</p>
+                </div>
+
+
+                <div class="form-content">
+
+
+
+                    <div class="input-box">
+                        <label for="email">Email address</label>
+                        <div class="input-container">
+                            <span class="material-symbols-outlined">alternate_email</span>
+                            <input type="email" id="email" placeholder="Enter your email address">
+
+                        </div>
+                        <small class="error-msg" id="emailError"></small>
+                    </div>
+
+                    <div class="input-box">
+                        <div class="password-label">
+
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="input-container">
+                            <span class="material-symbols-outlined">lock</span>
+                            <input type="password" id="password" placeholder="Enter your password">
+                            <span class="material-symbols-outlined toggle-password"
+                                id="togglePassword">visibility_off</span>
+                        </div>
+                        <small class="error-msg" id="passwordError"></small>
+
+                    </div>
+
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <div id="" class="login-sign-btns">
+                        <button id="login-btn" type="submit" disabled>Login</button>
+                        <p class="formMsg" id="formMsg"></p>
+                        <a href="#">Don't have an account? <span>Sign up</span></a>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="material-symbols-outlined success-icon">check_circle</span>
+            <h2>Welcome back, <span id="userName"></span>.</h2>
+            <p>You have been successfully logged in.</p>
+            <button id="closeModalBtn">Continue</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
